@@ -1,0 +1,13 @@
+.contact {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: crimson;
+  z-index: 50;
+  border-radius: 50% 50% 50% 0;
+
+  i{
+    font-size: 3rem;
+    padding: 2rem 2.5rem;
+  }
+}

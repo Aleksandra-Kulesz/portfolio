@@ -1,0 +1,183 @@
+main{
+  width: 100vw;
+  height: 100vh;
+  h1{
+    font-size: 8rem;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    z-index: 50;
+    color: white;
+  }
+
+  h2{
+    font-size: 6rem;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    z-index: 50;
+    color: white;
+  }
+  .splash1{
+    @include splash();
+    background-image: url("./../Assets/splash1.png");
+    top: 55%;
+    left: 15%;
+    height: 35vh;
+    width: 40vw;
+    z-index: 10;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-delay: 4.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    @keyframes up {
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: .25;
+      }
+      50% {
+        opacity: .5;
+      }
+      75% {
+        opacity: .75;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  .splash2{
+    @include splash();
+    background-image: url("./../Assets/splash2.png");
+    top: 40%;
+    left: 50%;
+    height: 55vh;
+    width: 40vw;
+    animation-name: up;
+    animation-duration: 1s;
+    animation-delay: .7s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+
+  .splash3{
+    @include splash();
+    background-image: url("./../Assets/splash3.png");
+    top: 60%;
+    left: 30%;
+    height: 50vh;
+    width: 40vw;
+    animation-name: up;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  .splash4{
+    @include splash();
+    background-image: url("./../Assets/splash4.png");
+    top: 0;
+    left: 5%;
+    height: 55vh;
+    width: 50vw;
+    z-index: 15;
+    opacity: 0;
+    animation-name: up;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+    animation-duration: .3s;
+  }
+
+  .splash5{
+    @include splash();
+    background-image: url("./../Assets/splash5.png");
+    bottom: 20%;
+    left: 20%;
+    height: 65vh;
+    width: 60vw;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: up;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+  }
+
+  .splash6{
+    @include splash();
+    background-image: url("./../Assets/splash6.png");
+    top: -20%;
+    left: -30%;
+    height: 65vh;
+    width: 70vw;
+    z-index: -10;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: up;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+  }
+
+  .splash7{
+    @include splash();
+    background-image: url("./../Assets/splash7.png");
+    bottom: -15%;
+    right: -20%;
+    height: 100vh;
+    width: 50vw;
+    animation-name: up;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  .splash8{
+    @include splash();
+    background-image: url("./../Assets/splash8.png");
+    bottom: 40%;
+    right: -5%;
+    height: 55vh;
+    width: 40vw;
+    opacity: 0;
+    animation-name: up;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-duration: .2s;
+  }
+
+  .splash9{
+    @include splash();
+    background-image: url("./../Assets/splash9.png");
+    bottom: 20%;
+    right: 20%;
+    height: 35vh;
+    width: 40vw;
+    z-index: 10;
+    animation-name: up;
+    animation-duration: .2s;
+    animation-delay: 3.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  .splash10{
+    @include splash();
+    background-image: url("./../Assets/splash11.png");
+    bottom: 5%;
+    left: -15%;
+    height: 75vh;
+    width: 60vw;
+    z-index: -5;
+    animation-name: up;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+}
