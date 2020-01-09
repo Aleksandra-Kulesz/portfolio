@@ -1,12 +1,52 @@
-.contact {
+.contact_closed {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: crimson;
+  background-color: rgba(231, 68, 98, .7);
   z-index: 50;
   border-radius: 50% 50% 50% 0;
+  display: flex;
 
-  i{
+  i {
+    font-size: 3rem;
+    padding: 2rem 2.5rem;
+  }
+}
+
+.contact_opened {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(231, 68, 98, .7);
+  z-index: 50;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .phone {
+    .phone_input {
+      background-color: transparent;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: bolder;
+    }
+  }
+
+  .mail {
+    .mail_input {
+      background-color: transparent;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: bolder;
+    }
+  }
+
+  a {
+    color: black;
+  }
+
+  i {
     font-size: 3rem;
     padding: 2rem 2.5rem;
   }

@@ -19,12 +19,11 @@ main{
     color: white;
   }
   .splash1{
-    @include splash();
-    background-image: url("./../Assets/splash1.png");
-    top: 55%;
-    left: 15%;
+    position: absolute;
+    top: 65%;
+    left: 35%;
     height: 35vh;
-    width: 40vw;
+    width: auto;
     z-index: 10;
     animation-name: up;
     animation-duration: 1s;
@@ -52,27 +51,26 @@ main{
   }
 
   .splash2{
-    @include splash();
-    background-image: url("./../Assets/splash2.png");
-    top: 40%;
+    position: absolute;
+    top: 20%;
     left: 50%;
     height: 55vh;
-    width: 40vw;
+    width: auto;
     animation-name: up;
     animation-duration: 1s;
     animation-delay: .7s;
     opacity: 0;
     animation-fill-mode: forwards;
+    z-index: 5;
   }
 
 
   .splash3{
-    @include splash();
-    background-image: url("./../Assets/splash3.png");
-    top: 60%;
+    position: absolute;
+    top: 50%;
     left: 30%;
     height: 50vh;
-    width: 40vw;
+    width: auto;
     animation-name: up;
     animation-duration: 1s;
     opacity: 0;
@@ -80,13 +78,12 @@ main{
   }
 
   .splash4{
-    @include splash();
-    background-image: url("./../Assets/splash4.png");
+    position: absolute;
     top: 0;
     left: 5%;
     height: 55vh;
-    width: 50vw;
-    z-index: 15;
+    width: auto;
+    z-index: 10;
     opacity: 0;
     animation-name: up;
     animation-fill-mode: forwards;
@@ -95,12 +92,11 @@ main{
   }
 
   .splash5{
-    @include splash();
-    background-image: url("./../Assets/splash5.png");
-    bottom: 20%;
+    position: absolute;
+    bottom: 40%;
     left: 20%;
-    height: 65vh;
-    width: 60vw;
+    height: 85vh;
+    width: auto;
     opacity: 0;
     animation-fill-mode: forwards;
     animation-name: up;
@@ -109,12 +105,11 @@ main{
   }
 
   .splash6{
-    @include splash();
-    background-image: url("./../Assets/splash6.png");
-    top: -20%;
-    left: -30%;
+    position: absolute;
+    top: -10%;
+    left: -10%;
     height: 65vh;
-    width: 70vw;
+    width: auto;
     z-index: -10;
     opacity: 0;
     animation-fill-mode: forwards;
@@ -124,12 +119,11 @@ main{
   }
 
   .splash7{
-    @include splash();
-    background-image: url("./../Assets/splash7.png");
+    position: absolute;
     bottom: -15%;
     right: -20%;
     height: 100vh;
-    width: 50vw;
+    width: auto;
     animation-name: up;
     animation-duration: 2s;
     animation-delay: 1.5s;
@@ -138,26 +132,25 @@ main{
   }
 
   .splash8{
-    @include splash();
-    background-image: url("./../Assets/splash8.png");
+    position: absolute;
     bottom: 40%;
     right: -5%;
     height: 55vh;
-    width: 40vw;
+    width: auto;
     opacity: 0;
     animation-name: up;
     animation-fill-mode: forwards;
     animation-delay: 4s;
     animation-duration: .2s;
+    z-index: 20;
   }
 
   .splash9{
-    @include splash();
-    background-image: url("./../Assets/splash9.png");
+    position: absolute;
     bottom: 20%;
     right: 20%;
     height: 35vh;
-    width: 40vw;
+    width: auto;
     z-index: 10;
     animation-name: up;
     animation-duration: .2s;
@@ -167,13 +160,12 @@ main{
   }
 
   .splash10{
-    @include splash();
-    background-image: url("./../Assets/splash11.png");
-    bottom: 5%;
-    left: -15%;
+    position: absolute;
+    bottom: -5%;
+    left: -5%;
     height: 75vh;
-    width: 60vw;
-    z-index: -5;
+    width: auto;
+    z-index: 5;
     animation-name: up;
     animation-duration: 2s;
     animation-delay: 1.5s;
