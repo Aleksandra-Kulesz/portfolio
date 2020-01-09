@@ -1,11 +1,39 @@
-import React,{Component} from 'react';
+import React, {Component, useState} from 'react';
 
 const Portfolio = (props) => {
-    return (
-        <section className='portfolio'>
-            <div/>
-        </section>
-    )
+    const [isClicked, setClick] = useState(true);
+
+    if (isClicked) {
+        return (
+            <section className='menu' onClick={() => setClick(!isClicked)}>
+                <div className='dot'/>
+                <div className='dot'/>
+                <div className='dot'/>
+            </section>
+        )
+    } else {
+        return (
+            <section className="portfolio" onClick={() => setClick(!isClicked)}>
+                <div className="portfolio_technologies">
+                    <h4>Technologies</h4>
+                    <div className="portfolio_technologies__icons">
+                        <i className="fab fa-html5"/>
+                        <i className="fab fa-css3-alt"/>
+                        <i className="fab fa-js-square"/>
+                        <i className="fab fa-sass"/>
+                        <i className="fab fa-gulp"/>
+                        <i className="fab fa-react"/>
+                        <i className="fab fa-git"/>
+                        <img src="#" alt="jQuery icon"/>
+                    </div>
+                </div>
+                <div className="portfolio__realisations">
+                    <h4>Realisations</h4>
+                    <img src="#" alt="#"/>
+                </div>
+            </section>
+        )
+    }
 };
 
 export {Portfolio};
