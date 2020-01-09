@@ -6,11 +6,32 @@
   z-index: 100;
   border-radius: 50% 50% 50% 0;
   display: flex;
-  animation-name: close;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
   cursor: pointer;
+  animation-name: reduce, round;
+  animation-duration:.5s, .3s;
+  animation-iteration-count:1, 1;
+  animation-timing-function: linear, linear;
+  animation-delay: 0s, .5s;
+  @keyframes reduce {
+    0% {
+      width: 100%;
+      border-radius: 0;
+    }
+    100% {
+      width: 10%;
+      border-radius: 0;
+    }
+  }
+  @keyframes round {
+    0% {
+      border-radius: 0 50% 50% 0;
+    }
+    100% {
+      border-radius: 50% 50% 50% 0;
+    }
+  }
+
+
 
   i {
     font-size: 3rem;
@@ -19,7 +40,6 @@
 }
 
 .contact_opened {
-  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -27,27 +47,78 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  animation-name: open;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
   z-index: 100;
+  animation-name: square, stretch;
+  animation-duration:.3s, .5s;
+  animation-iteration-count:1, 1;
+  animation-timing-function: linear, linear;
+  animation-delay: 0s, .3s;
+  animation-fill-mode: forwards;
+  @keyframes square {
+    0% {
+      border-radius: 50% 50% 50% 0;
+      width: 6%;
+      height: 7rem;
+    }
+    100% {
+      border-radius: 0 50% 50% 0;
+      width: 6%;
+      height: 7rem;
+    }
+  }
+
+  @keyframes stretch {
+    0% {
+      width: 6%;
+      border-radius: 0;
+      height: 7rem;
+    }
+    100% {
+      width: 100%;
+      border-radius: 0;
+      height: 7rem;
+    }
+  }
 
   .phone {
+    opacity: 0;
+    cursor: pointer;
+    animation-name: fade-in;
+    animation-duration: .5s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+    @keyframes fade-in {
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
     .phone_input {
       background-color: transparent;
       border: none;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       font-weight: bolder;
+      cursor: pointer;
+      font-family: $font-base;
     }
   }
 
   .mail {
+    opacity: 0;
+    cursor: pointer;
+    animation-name: fade-in;
+    animation-duration: .5s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
     .mail_input {
+      cursor: pointer;
       background-color: transparent;
       border: none;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       font-weight: bolder;
+      font-family: $font-base;
     }
   }
 
@@ -56,7 +127,12 @@
   }
 
   i {
+    animation-name: fade-in;
+    animation-duration: .5s;
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
     font-size: 3rem;
     padding: 2rem 2.5rem;
+    opacity: 0;
   }
 }

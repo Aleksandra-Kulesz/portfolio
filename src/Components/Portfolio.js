@@ -1,4 +1,5 @@
 import React, {Component, useState} from 'react';
+import jquery from './../Assets/jquery.png';
 
 const Portfolio = (props) => {
     const [isClicked, setClick] = useState(true);
@@ -24,7 +25,7 @@ const Portfolio = (props) => {
                         <i className="fab fa-gulp"/>
                         <i className="fab fa-react"/>
                         <i className="fab fa-git"/>
-                        <img src="#" alt="jQuery icon"/>
+                        <img className='jquery' src={jquery} alt="jQuery icon"/>
                     </div>
                 </div>
                 <div className="portfolio__realisations">
