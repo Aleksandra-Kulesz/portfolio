@@ -17,13 +17,13 @@ const Contact = (props) => {
 
     if (!isClicked) {
         return (
-            <section className='contact_closed' onClick={() => setClick(!isClicked)}>
+            <section className='contact_closed' onMouseEnter={() => setClick(!isClicked)} onClick={() => setClick(!isClicked)}>
                 <i className="fas fa-mobile"/>
             </section>
         )
     } else {
         return (
-            <section className='contact_opened' onClick={() => setClick(!isClicked)}>
+            <section className='contact_opened' onMouseLeave={() => setClick(!isClicked)} onClick={() => setClick(!isClicked)}>
                 <div className="phone" onClick={event => copyToClipboardPhone(event)}>
                     <i className="fas fa-mobile"/>
                     <input className='phone_input' type='text' id='phone' value='+48 511 535 939'/>

@@ -35,6 +35,14 @@
       opacity: 1;
     }
   }
+.portfolio_close{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 100;
+  font-size: 2rem;
+  cursor: pointer;
+}
 
   .portfolio_technologies {
     width: 100%;
@@ -65,8 +73,19 @@
     background-color: rgba(256, 256, 256, .7);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     font-size: 3rem;
+    h4{
+      margin: 3rem;
+    }
+    .slick-slider{
+      width: 60%;
+      margin: 0 auto;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
