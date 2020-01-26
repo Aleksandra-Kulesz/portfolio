@@ -180,6 +180,188 @@
   }
 }
 
+@media(min-width: 500px) and (max-width: 999px){
+  main {
+    width: 100vw;
+    height: 100vh;
+
+    h1 {
+      font-size: 6.5rem;
+      position: absolute;
+      top: 30%;
+      left: 20%;
+      z-index: 50;
+      color: white;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 4.5rem;
+      position: absolute;
+      top: 55%;
+      left: 30%;
+      z-index: 50;
+      color: white;
+    }
+
+    .splash1 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 15vh;
+      width: auto;
+      z-index: 10;
+      animation-name: up;
+      animation-duration: 1s;
+      animation-delay: 4.7s;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+      animation-fill-mode: both;
+      @keyframes up {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: .25;
+        }
+        50% {
+          opacity: .5;
+        }
+        75% {
+          opacity: .75;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+
+    .splash2 {
+      position: absolute;
+      top: 15%;
+      left: 60%;
+      height: 35vh;
+      width: auto;
+      animation-name: up;
+      animation-duration: 1s;
+      animation-delay: 1.2s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      z-index: 5;
+    }
+
+
+    .splash3 {
+      position: absolute;
+      top: 35%;
+      left: 15%;
+      height: 35vh;
+      width: auto;
+      animation-name: up;
+      animation-duration: 1s;
+      opacity: 0;
+      animation-delay: .5s;
+      animation-fill-mode: forwards;
+    }
+
+    .splash4 {
+      position: absolute;
+      top: 5%;
+      right: -5%;
+      height: 30vh;
+      width: auto;
+      z-index: 10;
+      opacity: 0;
+      animation-name: up;
+      animation-fill-mode: forwards;
+      animation-delay: 4s;
+      animation-duration: .3s;
+    }
+
+    .splash5 {
+      position: absolute;
+      bottom: 5%;
+      left: -20%;
+      height: 70vh;
+      width: auto;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      animation-name: up;
+      animation-delay: 3s;
+      animation-duration: 2s;
+    }
+
+    .splash6 {
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      height: 35vh;
+      width: auto;
+      z-index: -10;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      animation-name: up;
+      animation-delay: 3s;
+      animation-duration: 2s;
+    }
+
+    .splash7 {
+      position: absolute;
+      bottom: -25%;
+      right: -30%;
+      height: 70vh;
+      width: auto;
+      animation-name: up;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+    }
+
+    .splash8 {
+      position: absolute;
+      bottom: 15%;
+      left: 10%;
+      height: 25vh;
+      width: auto;
+      opacity: 0;
+      animation-name: up;
+      animation-fill-mode: forwards;
+      animation-delay: 4.5s;
+      animation-duration: .2s;
+      z-index: 20;
+    }
+
+    .splash9 {
+      position: absolute;
+      bottom: 45%;
+      left: -15%;
+      height: 35vh;
+      width: auto;
+      z-index: 10;
+      animation-name: up;
+      animation-duration: .2s;
+      animation-delay: 3.7s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+    }
+
+    .splash10 {
+      position: absolute;
+      top: -5%;
+      right: -5%;
+      height: 45vh;
+      width: auto;
+      z-index: -10;
+      animation-name: up;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
 @media (min-width: 1000px) {
   main {
     height: 100vh;
