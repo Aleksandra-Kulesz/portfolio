@@ -35,7 +35,7 @@ const Portfolio = (props) => {
                 </div>
                 <div className="portfolio__realisations">
                     <h4>Realisations</h4>
-                    {window.innerWidth<500?<VerticalSwipeToSlide/>:<SimpleSlider/>}
+                    {window.innerWidth<1000?<VerticalSwipeToSlide/>:<SimpleSlider/>}
                 </div>
             </section>
         )

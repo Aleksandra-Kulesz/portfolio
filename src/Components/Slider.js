@@ -12,13 +12,13 @@ class SimpleSlider extends React.Component {
         return (
                 <Slider className="slider_container" {...settings}>
                     <div>
-                        <a href="https://github.com/Aleksandra-Kulesz/shopper" target='blank'><img src={page1}/></a>
+                        <a href="https://github.com/Aleksandra-Kulesz/shopper" target='blank'><img alt='Shopper website - a CodersLab final project' src={page1}/></a>
                     </div>
                     <div>
-                        <a href="http://magda.allan690.usermd.net/" target='blank'><img src={page2}/></a>
+                        <a href="http://magda.allan690.usermd.net/" target='blank'><img alt="Magdalena Borkowska company's website" src={page2}/></a>
                     </div>
                     <div>
-                        <a href="https://github.com/Aleksandra-Kulesz/CL" target='blank'><img src={page3}/></a>
+                        <a href="http://olina.allan690.usermd.net/" target='blank'><img alt="BestShop website - a CodersLab exercise" src={page3}/></a>
                     </div>
                 </Slider>
         );
