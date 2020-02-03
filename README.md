@@ -1,3 +1,22 @@
+							This is a project of my portfolio site.
+
+
+
+I used SASS and REACT to create this project. I also made use of the Googlefonts and the Fontawesome. 
+
+It presents a few of my other realisations. You can also find here my contact details.
+
+Simple RWD were used in this project, so it can be viewed on the most popular mobile devices.
+
+To watch effect of my work, go to: http://aleksandra-kulesz.github.io/portfolio
+
+If you see any problaims with oppening this site, please send me some feedback - olina.kulesz@gmail.com. Your opinion is realy importent to me!
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
