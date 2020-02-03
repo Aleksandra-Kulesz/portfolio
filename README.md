@@ -1,4 +1,4 @@
-							This is a project of my portfolio site.
+						This is a project of my portfolio site.
 
 
 
@@ -10,7 +10,7 @@ Simple RWD were used in this project, so it can be viewed on the most popular mo
 
 To watch effect of my work, go to: http://aleksandra-kulesz.github.io/portfolio
 
-If you see any problaims with oppening this site, please send me some feedback - olina.kulesz@gmail.com. Your opinion is realy importent to me!
+If you see any problems with oppening this site, please send me some feedback - olina.kulesz@gmail.com. Your opinion is really important to me!
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
