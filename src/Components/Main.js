@@ -40,7 +40,7 @@ const Main = (props) => {
                 <img className='splash10' alt='green watercolor splash' src={splash10}/>
             </main>
         )
-    } else {
+    }
         return (
             <main>
                 <h1>Aleksandra Kulesz</h1>
@@ -57,7 +57,6 @@ const Main = (props) => {
                 <img className='splash10' alt='green watercolor splash' src={splash10Mobile}/>
             </main>
         )
-    }
 };
 
 export {Main};
