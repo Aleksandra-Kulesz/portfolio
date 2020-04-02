@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, { Component, useState } from "react";
 
 const Contact = (props) => {
     const [isClicked, setClick] = useState(false);
@@ -18,7 +18,7 @@ const Contact = (props) => {
     if (!isClicked) {
         return (
             <section className='contact_closed' onMouseEnter={() => setClick(!isClicked)} onClick={() => setClick(!isClicked)}>
-                <i className="fas fa-mobile"/>
+                <i className="fas fa-mobile" onMouseEnter={() => setClick(!isClicked)} onClick={() => setClick(!isClicked)}/>
             </section>
         )
     } else {

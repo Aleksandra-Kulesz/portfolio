@@ -1,217 +1,160 @@
-@media(max-width: 749px) {
-  .contact_closed {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(231, 68, 98, .7);
-    z-index: 100;
-    border-radius: 50% 50% 50% 0;
-    display: flex;
-    cursor: pointer;
+.contact_closed {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(231, 68, 98, 0.7);
+  z-index: 100;
+  border-radius: 50% 50% 50% 0;
+  display: flex;
+  cursor: pointer;
 
-    .closed_animation {
-      animation-name: reduce, round;
-      animation-duration: .5s, .3s;
-      animation-iteration-count: 1, 1;
-      animation-timing-function: linear, linear;
-      animation-delay: 0s, .5s;
-      @keyframes reduce {
-        0% {
-          width: 100%;
-          border-radius: 0;
-        }
-        100% {
-          width: 10%;
-          border-radius: 0;
-        }
+  .closed_animation {
+    animation-name: reduce, round;
+    animation-duration: 0.5s, 0.3s;
+    animation-iteration-count: 1, 1;
+    animation-timing-function: linear, linear;
+    animation-delay: 0s, 0.5s;
+    @keyframes reduce {
+      0% {
+        width: 100%;
+        border-radius: 0;
       }
-      @keyframes round {
-        0% {
-          border-radius: 0 50% 50% 0;
-        }
-        100% {
-          border-radius: 50% 50% 50% 0;
-        }
+      100% {
+        width: 10%;
+        border-radius: 0;
       }
     }
-
-    i {
-      font-size: 3rem;
-      padding: 2rem 2.5rem;
+    @keyframes round {
+      0% {
+        border-radius: 0 50% 50% 0;
+      }
+      100% {
+        border-radius: 50% 50% 50% 0;
+      }
     }
   }
 
-  .contact_opened {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(231, 68, 98, .9);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 100;
-    animation-name: square, stretch;
-    animation-duration: .3s, .5s;
-    animation-iteration-count: 1, 1;
-    animation-timing-function: linear, linear;
-    animation-delay: 0s, .3s;
-    animation-fill-mode: forwards;
-    @keyframes square {
-      0% {
-        border-radius: 50% 50% 50% 0;
-        width: 6%;
-        height: 7rem;
-      }
-      100% {
-        border-radius: 0 50% 50% 0;
-        width: 6%;
-        height: 7rem;
-      }
-    }
-
-    @keyframes stretch {
-      0% {
-        width: 6%;
-        border-radius: 0;
-        height: 7rem;
-      }
-      100% {
-        width: 100%;
-        border-radius: 0;
-        height: 100%;
-      }
-    }
-
-    .phone {
-      opacity: 0;
-      cursor: pointer;
-      animation-name: fade-in;
-      animation-duration: .5s;
-      animation-delay: .7s;
-      animation-fill-mode: forwards;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      .phone_input {
-        background-color: transparent;
-        border: none;
-        font-size: 1.7rem;
-        font-weight: bolder;
-        cursor: pointer;
-        font-family: $font-base;
-        text-align: center;
-      }
-    }
-
-    .mail {
-      opacity: 0;
-      cursor: pointer;
-      animation-name: fade-in;
-      animation-duration: .5s;
-      animation-delay: .7s;
-      animation-fill-mode: forwards;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .mail_input {
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-        font-size: 1.7rem;
-        font-weight: bolder;
-        font-family: $font-base;
-        text-align: center;
-      }
-    }
-
-    a {
-      color: black;
-    }
-
-    i {
-      animation-name: fade-in;
-      animation-duration: .5s;
-      animation-delay: .7s;
-      animation-fill-mode: forwards;
-      font-size: 3rem;
-      padding: 2rem 2.5rem;
-      opacity: 0;
-    }
+  i {
+    font-size: 3rem;
+    padding: 2rem 2.5rem;
   }
 }
 
-@media (min-width: 750px) {
-  .contact_closed {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(231, 68, 98, .7);
-    z-index: 100;
-    border-radius: 50% 50% 50% 0;
-    display: flex;
-    cursor: pointer;
-
-    .closed_animation {
-      animation-name: reduce, round;
-      animation-duration: .5s, .3s;
-      animation-iteration-count: 1, 1;
-      animation-timing-function: linear, linear;
-      animation-delay: 0s, .5s;
-      @keyframes reduce {
-        0% {
-          width: 100%;
-          border-radius: 0;
-        }
-        100% {
-          width: 10%;
-          border-radius: 0;
-        }
-      }
-      @keyframes round {
-        0% {
-          border-radius: 0 50% 50% 0;
-        }
-        100% {
-          border-radius: 50% 50% 50% 0;
-        }
-      }
+.contact_opened {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(231, 68, 98, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  animation-name: square, stretch;
+  animation-duration: 0.3s, 0.5s;
+  animation-iteration-count: 1, 1;
+  animation-timing-function: linear, linear;
+  animation-delay: 0s, 0.3s;
+  animation-fill-mode: forwards;
+  @keyframes square {
+    0% {
+      border-radius: 50% 50% 50% 0;
+      width: 6%;
+      height: 7rem;
     }
-
-    i {
-      font-size: 3rem;
-      padding: 2rem 2.5rem;
+    100% {
+      border-radius: 0 50% 50% 0;
+      width: 6%;
+      height: 7rem;
     }
   }
 
+  @keyframes stretch {
+    0% {
+      width: 6%;
+      border-radius: 0 50% 50% 0;
+      height: 7rem;
+    }
+    100% {
+      width: 100%;
+      border-radius: 0;
+      height: 100%;
+    }
+  }
 
-  .contact_opened {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(231, 68, 98, .9);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 100;
-    animation-name: square, stretch;
-    animation-duration: .3s, .5s;
-    animation-iteration-count: 1, 1;
-    animation-timing-function: linear, linear;
-    animation-delay: 0s, .3s;
+  .phone {
+    opacity: 0;
+    cursor: pointer;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 0.7s;
     animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .phone_input {
+      background-color: transparent;
+      border: none;
+      font-size: 1.7rem;
+      font-weight: bolder;
+      cursor: pointer;
+      font-family: 'cabin_sketchbold';
+      text-align: center;
+    }
+  }
+
+  .mail {
+    opacity: 0;
+    cursor: pointer;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .mail_input {
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      font-size: 1.7rem;
+      font-weight: bolder;
+      font-family: 'cabin_sketchbold';
+      text-align: center;
+    }
+  }
+
+  a {
+    color: black;
+  }
+
+  i {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+    font-size: 3rem;
+    padding: 2rem 2.5rem;
+    opacity: 0;
+  }
+}
+
+
+@media (min-width: 750px) {
+  .contact_opened {
+    flex-direction: row;
     @keyframes stretch {
       0% {
         width: 6%;
@@ -224,77 +167,13 @@
         height: 7rem;
       }
     }
-    @keyframes square {
-      0% {
-        border-radius: 50% 50% 50% 0;
-        width: 6%;
-        height: 7rem;
-      }
-      100% {
-        border-radius: 0 50% 50% 0;
-        width: 6%;
-        height: 7rem;
-      }
-    }
 
     .phone {
-      display: flex;
-      opacity: 0;
-      cursor: pointer;
-      animation-name: fade-in;
-      animation-duration: .5s;
-      animation-delay: .7s;
-      animation-fill-mode: forwards;
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      .phone_input {
-        background-color: transparent;
-        border: none;
-        font-size: 1.7rem;
-        font-weight: bolder;
-        cursor: pointer;
-        font-family: $font-base;
-      }
+      flex-direction: row;
     }
 
     .mail {
-      opacity: 0;
-      cursor: pointer;
-      animation-name: fade-in;
-      animation-duration: .5s;
-      animation-delay: .7s;
-      animation-fill-mode: forwards;
-      display: flex;
-
-      .mail_input {
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-        font-size: 1.7rem;
-        font-weight: bolder;
-        font-family: $font-base;
-      }
-    }
-
-    a {
-      color: black;
-    }
-
-    i {
-      animation-name: fade-in;
-      animation-duration: .5s;
-      animation-delay: .7s;
-      animation-fill-mode: forwards;
-      font-size: 3rem;
-      padding: 2rem 2.5rem;
-      opacity: 0;
+      flex-direction: row;
     }
   }
 }
