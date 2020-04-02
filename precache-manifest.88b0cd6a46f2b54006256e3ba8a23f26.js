@@ -1,35 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8cec324982f554f6061001f1ff02f19b",
+    "revision": "529f0ea8542c6579adbf73676be8cc11",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "f3577ddc48662fe0fa1e",
-    "url": "/portfolio/static/css/main.01fab9b8.chunk.css"
+    "revision": "30fe8baf8c5273f89995",
+    "url": "/portfolio/static/css/main.9f056a0c.chunk.css"
   },
   {
-    "revision": "cc4f1551cf7f7e9bb1fd",
-    "url": "/portfolio/static/js/2.1ffca0dc.chunk.js"
+    "revision": "33f14a919ff0e4fc40c2",
+    "url": "/portfolio/static/js/2.1464c465.chunk.js"
   },
   {
     "revision": "f032203ca460334c00de541c30a6078a",
-    "url": "/portfolio/static/js/2.1ffca0dc.chunk.js.LICENSE"
+    "url": "/portfolio/static/js/2.1464c465.chunk.js.LICENSE"
   },
   {
-    "revision": "f3577ddc48662fe0fa1e",
-    "url": "/portfolio/static/js/main.5f17e438.chunk.js"
+    "revision": "30fe8baf8c5273f89995",
+    "url": "/portfolio/static/js/main.ff35d136.chunk.js"
   },
   {
     "revision": "e139b2548d94e481a5d0",
     "url": "/portfolio/static/js/runtime-main.0762ecda.js"
   },
   {
+    "revision": "9791cc2c0902bf50b6cefd7429b4ee5e",
+    "url": "/portfolio/static/media/cabinsketch-bold-webfont.9791cc2c.woff2"
+  },
+  {
+    "revision": "e2ff6955e5a2f5a47bf6f8d729e8c49e",
+    "url": "/portfolio/static/media/cabinsketch-bold-webfont.e2ff6955.woff"
+  },
+  {
     "revision": "50be5235f7a4f88f7c082dbb26a84444",
     "url": "/portfolio/static/media/jquery.50be5235.png"
   },
   {
-    "revision": "427d568e4c9c1d41e4cab13005c7afad",
-    "url": "/portfolio/static/media/page1.427d568e.png"
+    "revision": "445fe1ebef05d568c5d38280db8c8d3e",
+    "url": "/portfolio/static/media/page1.445fe1eb.png"
   },
   {
     "revision": "dd72077a95f9dd42f63b32fcdcc74ff5",
@@ -38,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "259dc2d6b51e6f6952390fcc84385764",
     "url": "/portfolio/static/media/page3.259dc2d6.png"
+  },
+  {
+    "revision": "427d568e4c9c1d41e4cab13005c7afad",
+    "url": "/portfolio/static/media/page4.427d568e.png"
   },
   {
     "revision": "2ce25ec503ba6e4acc9aa7bab0d45456",
