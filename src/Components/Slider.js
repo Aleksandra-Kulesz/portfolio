@@ -13,6 +13,11 @@ class SimpleSlider extends React.Component {
     };
     return (
       <Slider className="slider_container" {...settings}>
+                <div>
+          <a href="http://archeolog-plock.pl/" target="blank">
+            <img alt="Magdalena Borkowska company's website" src={page2} />
+          </a>
+        </div>
         <div>
           <a href="http://dmka-light.allan690.usermd.net" target="blank">
             <img
@@ -27,11 +32,6 @@ class SimpleSlider extends React.Component {
               alt="DMKA's page dark version"
               src={page1}
             />
-          </a>
-        </div>
-        <div>
-          <a href="http://magda.allan690.usermd.net/" target="blank">
-            <img alt="Magdalena Borkowska company's website" src={page2} />
           </a>
         </div>
         <div>
